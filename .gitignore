@@ -1,0 +1,5 @@
+run-backend-flashcard
+**/*.sql
+plan.org
+.cabal-sandbox
+dist/
