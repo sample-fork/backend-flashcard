@@ -18,7 +18,8 @@ import qualified Web.Scotty as S
 
 import Routes.DeckRoutes
 import Routes.CardRoutes
-import Routes.SessionRoutes    
+import Routes.CardUserRoutes    
+import Routes.SessionRoutes
 
 import DB
 
@@ -29,6 +30,7 @@ main = do
   scotty 3030 $ do     
     deckRoutes conn
     cardRoutes conn
+    userRoutes conn
     sessionRoutes conn
   close conn
       
